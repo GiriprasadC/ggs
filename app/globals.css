@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+body{
+  margin: 0;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* overflow-x: hidden; */
+}
+h1{
+  font-family: "Julius Sans One", sans-serif;
+}
+hr{
+  margin: auto;
+  color: black;
+  background-color: black;
+  width: 70%;
+}
+@media (min-width: 576px) { 
+  body{
+    /* background-color: red; */
+  }
+  
+ }
+
+@media (min-width: 768px) { 
+  body{
+    /* background-color: green; */
+  }
+ }
+
+@media (min-width: 992px) { 
+  body{
+    /* background-color: blue; */
+  }
+ }
+
+ @media only screen and (max-width: 600px) {
+    body{
+      background-color: white;
+    }
+ }
