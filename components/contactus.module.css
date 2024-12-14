@@ -1,3 +1,4 @@
+
 .contactContainer{
     transform: skewY(0);
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
@@ -20,6 +21,9 @@
 .contactUs{
     padding: 100px;
     width: 100%;
+}
+.contactUs input{
+    color: black;
 }
 .footer{
     background-color: black;
@@ -80,6 +84,10 @@
 .contactSocialMedia img{
     height: 2.5rem;
     width: 2.5rem;
+}
+
+.contactUs form > textarea{
+    margin-top: 1rem;
 }
 
 @media only screen and (max-width: 600px) {

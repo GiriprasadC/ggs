@@ -28,7 +28,7 @@ export default function GGSHeader() {
         ></iframe> */}
         <div className={styles.steamPurchase}>
           <Image src={colony} height={500} width={500} alt='Colony'/>
-          <button>Wishlist Now</button>
+          <button>Buy Now</button>
         </div>
         <video height="100%" width="100%" autoPlay muted loop>
           

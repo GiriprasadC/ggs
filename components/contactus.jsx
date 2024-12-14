@@ -1,9 +1,41 @@
+'use client'
 import styles from './contactus.module.css'
 import instagram from '../public/instagram.webp'
 import youtube from '../public/youtube.webp'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 export default function ContactUs() {
+  const [email,setEmail] = useState('');
+  const [message,setMessage] = useState('');
+  
+  function sendMessage() {
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1317394561567428621/RIwI5YvBK1WqpuiDJ2uDSStRDitfBbJ2gucb2m05ujRIK2jq2hj_hA7mYBE2Or3KY5gt");
+    request.setRequestHeader('Content-type', 'application/json');
+    const params = {
+      username: email,
+      avatar_url: "https://cdn.discordapp.com/attachments/1223978870504685679/1232259311258964018/GGS_LOGO.png",
+      content: `**Email ID** : ${email}\n**Message** : ${message}`,
+    }
+
+    request.send(JSON.stringify(params));
+  }
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setEmail('')
+    setMessage('')
+    
+    sendMessage();
+  };
   return (
     <div id='ContactUs' className={styles.contactContainer}>
       <div className={styles.contactUs}>
@@ -20,9 +52,11 @@ export default function ContactUs() {
           </div>
         </div>
         <div className={styles.contactContainerForm}>
-          <input placeholder='Enter your Email' type='email'/>
-          <textarea placeholder='Enter your Queries'></textarea><button>Send</button>
+          <form onSubmit={handleSubmit}>
+          <input placeholder='Enter your Email' type='email' onChange={handleEmailChange} value={email}/>
+          <textarea placeholder='Enter your Queries' required onChange={handleMessageChange} value={message}></textarea><button type='submit' value="Submit">Submit</button>
 
+          </form>
         </div>
       </div>
 
