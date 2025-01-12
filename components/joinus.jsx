@@ -29,7 +29,7 @@ export default function JoinUs() {
           <button>Apply Now</button>
         </div>
       </div>
-      <h2>Want to be a Investor ? <span><Link href='https://google.com/'>Click Here</Link></span></h2>
+      <h2>Want to be a Investor ? <span><Link href='https://gamergenesisstudio.com/'>Click Here</Link></span></h2>
       
     </div>
   );

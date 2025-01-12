@@ -8,7 +8,7 @@ export default function GGSHeader() {
     <div id='Home' className={styles.header_container}>
         <div className={styles.header_navbar}>
             <div className={styles.navbarOne}>
-                <Image height={80} width={80} src={ggslogo} alt='Gamer Genesis Studio Logo'/><h1>Gamer Genesis Studio</h1>
+                <Image height={80} width={80} src={ggslogo} alt='Gamer Genesis Studio Logo'/><h1>Gamer Genesis Studio <span>By Eucleia Entertainment</span></h1>
             </div>
             <div className={styles.navbarTwo}>
                 <div className={styles.navLinks}>
