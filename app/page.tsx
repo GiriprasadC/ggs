@@ -12,6 +12,7 @@ export default function Home() {
       <OurGoal/>
       <Showcase/>
       <OurTeam/>
+        
       <hr/>
       <JoinUs/>
       <ContactUs/>

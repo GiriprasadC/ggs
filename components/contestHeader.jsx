@@ -11,10 +11,11 @@ export default function GGSHeader() {
             </div>
             <div className={styles.navbarTwo}>
                 <div className={styles.navLinks}>
-                <Link href='#Home'><h2 className={styles.navButtons}><span>Home</span></h2></Link>
-                <Link href='#Team'><h2 className={styles.navButtons}><span>Team</span></h2></Link>
-                <Link href='#JoinUs'><h2 className={styles.navButtons}><span>Join Us</span></h2></Link>
-                <Link href='#ContactUs'><h2 className={styles.navButtons}><span>Contact Us</span></h2></Link>
+                <Link href='/'><h2 className={styles.navButtons}><span>Home</span></h2></Link>
+                <Link href='/#Team'><h2 className={styles.navButtons}><span>Team</span></h2></Link>
+                <Link href='/#JoinUs'><h2 className={styles.navButtons}><span>Join Us</span></h2></Link>
+                <Link href='/#ContactUs'><h2 className={styles.navButtons}><span>Contact Us</span></h2></Link>
+                <Link href='/#ContactUs'><h2 className={styles.navButtons}><span>Contest</span></h2></Link>
                 </div>
             </div>
         </div>

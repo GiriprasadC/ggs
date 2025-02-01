@@ -70,7 +70,10 @@ export default function ContactUs() {
     <div id='ContactUs' className={styles.contactContainer}>
       <div className={styles.contactUs}>
       <h2>Contest</h2>
+      {/* <Link href="/sample.pdf" target='_blank'>Download Rulebook</Link> */}
+
       <div className={styles.contactContainerContent}>
+        
         <div className={styles.contactContainerForm}>
           <form onSubmit={handleSubmit}>
           <div className={styles.field}><h4>Name : </h4><input placeholder='Enter your Email' type='text' onChange={handleNameChange} required value={name}/></div>
