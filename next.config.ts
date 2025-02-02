@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: "/files/:path*", // Applies to all PDFs inside /public/files/
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/pdf",
+          },
+        ],
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

@@ -71,7 +71,7 @@ export default function ContactUs() {
       <div className={styles.contactUs}>
       <h2>Contest</h2>
       {/* <Link href="/sample.pdf" target='_blank'>Download Rulebook</Link> */}
-
+      <a href='/SPEEDRUN_CONTEST.pdf'>Download Rulebook</a>
       <div className={styles.contactContainerContent}>
         
         <div className={styles.contactContainerForm}>
