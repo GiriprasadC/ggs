@@ -15,7 +15,7 @@ export default function GGSHeader() {
                 <Link href='/#Team'><h2 className={styles.navButtons}><span>Team</span></h2></Link>
                 <Link href='/#JoinUs'><h2 className={styles.navButtons}><span>Join Us</span></h2></Link>
                 <Link href='/#ContactUs'><h2 className={styles.navButtons}><span>Contact Us</span></h2></Link>
-                <Link href='/#ContactUs'><h2 className={styles.navButtons}><span>Contest</span></h2></Link>
+                <Link href='/contest'><h2 className={styles.navButtons}><span>Contest</span></h2></Link>
                 </div>
             </div>
         </div>
